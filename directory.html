@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Directory | Morrow & Mane</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">M&M</span><span>Morrow & Mane</span></a
+        >
+        <button
+          class="menu-toggle"
+          data-menu-toggle
+          aria-label="Open navigation"
+        >
+          â˜°
+        </button>
+        <nav class="nav-links" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="groomers.html">Groomers</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="directory.html">Directory</a>
+          <a href="about.html">About</a>
+          <a class="nav-cta" href="contact.html">Book a visit</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <span class="eyebrow">Find your neighborhood favorite</span>
+            <h1>A good groomer is closer than you think.</h1>
+          </div>
+          <p>
+            Search our trusted directory by neighborhood, service, pet type,
+            budget, and availability.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filter-shell">
+            <div class="search-row">
+              <input
+                class="search-input"
+                data-search
+                type="search"
+                placeholder="Search by name, neighborhood, or service"
+              /><a class="button button-dark" href="contact.html"
+                >Need help choosing?</a
+              >
+            </div>
+            <div class="filter-grid">
+              <select data-filter="location" aria-label="Filter by location">
+                <option value="">All locations</option>
+                <option>Brooklyn Heights</option>
+                <option>West Village</option>
+                <option>Park Slope</option>
+                <option>Williamsburg</option>
+                <option>Cobble Hill</option>
+                <option>Upper East Side</option>
+                <option>Fort Greene</option>
+                <option>Red Hook</option>
+                <option>Carroll Gardens</option>
+                <option>DUMBO</option></select
+              ><select data-filter="type" aria-label="Filter by service type">
+                <option value="">All service types</option>
+                <option>Full service</option>
+                <option>Cat care</option>
+                <option>Mobile</option>
+                <option>Wellness</option>
+                <option>Spa</option>
+                <option>Breed styling</option></select
+              ><select data-filter="pet" aria-label="Filter by pet type">
+                <option value="">Any pet</option>
+                <option>Dogs</option>
+                <option>Cats</option></select
+              ><select data-filter="price" aria-label="Filter by price range">
+                <option value="">Any price</option>
+                <option value="under-80">Under $80</option>
+                <option value="80-110">$80 - $110</option>
+                <option value="over-110">$110+</option></select
+              ><select data-filter="rating" aria-label="Filter by rating">
+                <option value="">Any rating</option>
+                <option value="4.8">4.8+ stars</option>
+                <option value="4.9">4.9+ stars</option>
+                <option value="5">5.0 stars</option></select
+              ><select
+                data-filter="availability"
+                aria-label="Filter by availability"
+              >
+                <option value="">Any availability</option>
+                <option>Today</option>
+                <option>Tomorrow</option>
+                <option>This week</option>
+                <option>Waitlist</option>
+              </select>
+            </div>
+          </div>
+          <div class="results-bar">
+            <p data-result-count>10 trusted places to explore</p>
+            <span class="eyebrow">Vetted with care</span>
+          </div>
+          <div class="directory-grid" data-directory></div>
+        </div>
+      </section>
+    </main>
+    <div class="modal-backdrop" data-modal>
+      <div class="modal">
+        <button
+          class="modal-close"
+          data-close-modal
+          aria-label="Close booking form"
+        >
+          Ã—</button
+        ><span class="eyebrow">A beautiful next step</span>
+        <h2>Letâ€™s find a time.</h2>
+        <p>
+          Share a few details and weâ€™ll help you book with
+          <strong data-chosen>your preferred groomer</strong>.
+        </p>
+        <form data-booking-form class="booking-form">
+          <div class="form-field">
+            <label for="modal-name">Your name</label
+            ><input id="modal-name" required />
+          </div>
+          <div class="form-field">
+            <label for="modal-email">Email</label
+            ><input id="modal-email" type="email" required />
+          </div>
+          <div class="form-field full">
+            <label for="modal-pet">Tell us about your pet</label
+            ><textarea
+              id="modal-pet"
+              placeholder="Name, breed, and anything that helps us prepare"
+            ></textarea>
+          </div>
+          <div class="form-field full">
+            <button class="button button-primary" type="submit">
+              Request an appointment â†’</button
+            ><span data-form-message></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">M&M</span><span>Morrow & Mane</span></a
+          >
+          <p>Beautifully considered grooming and wellness for dogs and cats.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="groomers.html">Our groomers</a
+            ><a href="services.html">Services</a
+            ><a href="directory.html">Directory</a>
+          </div>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="footer-links">
+            <a href="about.html">About us</a><a href="contact.html">Contact</a
+            ><a href="contact.html">Book a visit</a>
+          </div>
+        </div>
+        <div>
+          <h3>Visit the studio</h3>
+          <div class="footer-links">
+            <span>12 Court Street</span><span>Brooklyn, NY 11201</span
+            ><span>hello@morrowmane.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>Â© 2025 Morrow & Mane</span
+        ><span>Made for pets who mean everything.</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact & Booking | Morrow & Mane</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">M&M</span><span>Morrow & Mane</span></a
+        >
+        <button
+          class="menu-toggle"
+          data-menu-toggle
+          aria-label="Open navigation"
+        >
+          â˜°
+        </button>
+        <nav class="nav-links" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="groomers.html">Groomers</a>
+          <a href="services.html">Services</a>
+          <a href="directory.html">Directory</a>
+          <a href="about.html">About</a>
+          <a class="nav-cta active" href="contact.html">Book a visit</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div>
+            <span class="eyebrow">A little hello</span>
+            <h1>Letâ€™s make their next visit a good one.</h1>
+          </div>
+          <p>
+            Tell us what youâ€™re looking for and our concierge will help you
+            find the right care.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-grid">
+          <div>
+            <span class="eyebrow">Weâ€™re here for you</span>
+            <h2>Thoughtful answers, from real people.</h2>
+            <p>
+              Whether youâ€™re booking a first puppy visit, looking for a cat
+              specialist, or just have a question, drop us a note.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="icon-badge">âŒ–</div>
+                <div>
+                  <h3>Visit us</h3>
+                  <p>12 Court Street<br />Brooklyn, NY 11201</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-badge">âœ‰</div>
+                <div>
+                  <h3>Email us</h3>
+                  <p>
+                    hello@morrowmane.com<br />We reply within one business day.
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon-badge">â—·</div>
+                <div>
+                  <h3>Hours</h3>
+                  <p>Mondayâ€“Sunday<br />8:00amâ€“7:00pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="booking-form" data-booking-form>
+            <div class="form-field">
+              <label for="name">Your name</label
+              ><input
+                id="name"
+                name="name"
+                placeholder="Alex Morgan"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="alex@email.com"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="pet">Pet type</label
+              ><select id="pet" name="pet">
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="service">What do they need?</label
+              ><select id="service" name="service">
+                <option>Bathing & blowout</option>
+                <option>Haircut</option>
+                <option>De-shedding</option>
+                <option>Nail trimming</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">Tell us about your pet</label
+              ><textarea
+                id="message"
+                name="message"
+                placeholder="Their name, breed, personality, and what would make this visit great..."
+              ></textarea>
+            </div>
+            <div class="form-field full">
+              <button class="button button-primary" type="submit">
+                Request an appointment â†’</button
+              ><span data-form-message></span>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section soft-band">
+        <div class="container section-heading">
+          <span class="eyebrow">Before you visit</span>
+          <h2>Weâ€™ll take it from here.</h2>
+          <div class="faq-list">
+            <details open>
+              <summary>What happens after I submit?</summary>
+              <p>
+                A member of our concierge team will reply with a few tailored
+                options and available times.
+              </p>
+            </details>
+            <details>
+              <summary>Can I request a specific groomer?</summary>
+              <p>
+                Of course. Mention their name in your note and weâ€™ll do our
+                best to line up the perfect appointment.
+              </p>
+            </details>
+            <details>
+              <summary>What if I need to reschedule?</summary>
+              <p>
+                Just email us at least 24 hours before your visit and weâ€™ll
+                help you find a new time.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><span class="brand-mark">M&M</span><span>Morrow & Mane</span></a
+          >
+          <p>Beautifully considered grooming and wellness for dogs and cats.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="groomers.html">Our groomers</a
+            ><a href="services.html">Services</a
+            ><a href="directory.html">Directory</a>
+          </div>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <div class="footer-links">
+            <a href="about.html">About us</a><a href="contact.html">Contact</a
+            ><a href="contact.html">Book a visit</a>
+          </div>
+        </div>
+        <div>
+          <h3>Visit the studio</h3>
+          <div class="footer-links">
+            <span>12 Court Street</span><span>Brooklyn, NY 11201</span
+            ><span>hello@morrowmane.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>Â© 2025 Morrow & Mane</span
+        ><span>Made for pets who mean everything.</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
